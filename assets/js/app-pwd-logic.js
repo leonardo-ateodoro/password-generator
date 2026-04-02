@@ -117,7 +117,18 @@ const copyPassword = () => {
     navigator.clipboard.writeText(novaSenha);
 };
 
-buttonElement.addEventListener('click', g)
+buttonElement.addEventListener('click', generatePassword);
+containerPassword.addEventListener('click', copyPassword);
+
+const clearData = () => {
+    historicoSenhas = [];
+    novaSenha = '';
+
+
+    containerPassword.classList.add('hide'); 
+    const historico = document.querySelector('app-pwd__history');
+    if (historico) {}
+}
 
 
 
